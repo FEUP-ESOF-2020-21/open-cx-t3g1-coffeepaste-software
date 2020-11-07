@@ -10,17 +10,67 @@ import 'package:jitsi_meet/room_name_constraint_type.dart';
 
 void main() => runApp(MyApp());
 
-class MyApp extends StatefulWidget {
+class MyApp extends StatelessWidget {
   @override
-  _MyAppState createState() => _MyAppState();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Navigation Basics',
+      home: FirstRoute(),
+    );
+  }
 }
 
-class _MyAppState extends State<MyApp> {
+class FirstRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Main Page'),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          child: Text('Create Session'),
+          onPressed: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => VideoConference()),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+class SecondRoute extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Session"),
+      ),
+      body: Center(
+        child: ElevatedButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text('Go back!'),
+        ),
+      ),
+    );
+  }
+}
+class VideoConference extends StatefulWidget {
+  @override
+  _VideoConferenceState createState() => _VideoConferenceState();
+}
+
+class _VideoConferenceState extends State<VideoConference> {
   final serverText = TextEditingController();
   final roomText = TextEditingController(text: "plugintestroom");
-  final subjectText = TextEditingController(text: "My Plugin Test Meeting");
-  final nameText = TextEditingController(text: "Plugin Test User");
-  final emailText = TextEditingController(text: "fake@email.com");
+  final subjectText = TextEditingController(text: "Spped Meeting");
+  final nameText = TextEditingController(text: "User");
+  final emailText = TextEditingController(text: "example@email.com");
   var isAudioOnly = true;
   var isAudioMuted = true;
   var isVideoMuted = true;
@@ -46,7 +96,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Plugin example app'),
+          title: const Text('Create Jitsi Meeting'),
         ),
         body: Container(
           padding: const EdgeInsets.symmetric(
