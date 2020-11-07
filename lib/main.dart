@@ -68,7 +68,7 @@ class VideoConference extends StatefulWidget {
 class _VideoConferenceState extends State<VideoConference> {
   final serverText = TextEditingController();
   final roomText = TextEditingController(text: "plugintestroom");
-  final subjectText = TextEditingController(text: "Spped Meeting");
+  final subjectText = TextEditingController(text: "Speed Meeting");
   final nameText = TextEditingController(text: "User");
   final emailText = TextEditingController(text: "example@email.com");
   var isAudioOnly = true;
@@ -113,7 +113,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   decoration: InputDecoration(
                       border: OutlineInputBorder(),
                       labelText: "Server URL",
-                      hintText: "Hint: Leave empty for meet.jitsi.si"),
+                      hintText: "Deixa em branco para meet.jitsi.si"),
                 ),
                 SizedBox(
                   height: 16.0,
@@ -132,7 +132,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   controller: subjectText,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: "Subject",
+                    labelText: "Tema",
                   ),
                 ),
                 SizedBox(
@@ -142,7 +142,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   controller: nameText,
                   decoration: InputDecoration(
                     border: OutlineInputBorder(),
-                    labelText: "Display Name",
+                    labelText: "Nome",
                   ),
                 ),
                 SizedBox(
