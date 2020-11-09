@@ -8,13 +8,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Navigation Basics',
-      home: FirstRoute(),
+      title: 'Main Page',
+      home: MainPage(),
     );
   }
 }
 
-class FirstRoute extends StatelessWidget {
+class MainPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
