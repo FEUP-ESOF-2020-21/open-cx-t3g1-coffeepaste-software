@@ -9,19 +9,41 @@ import 'package:jitsi_meet/room_name_constraint.dart';
 import 'package:jitsi_meet/room_name_constraint_type.dart';
 
 class VideoConference extends StatefulWidget {
+  final String roomType;
+  final int roomID;
+  final String roomDescription;
+
+  const VideoConference ({Key key, this.roomType, this.roomDescription, this.roomID}): super(key: key);
+  
   @override
   _VideoConferenceState createState() => _VideoConferenceState();
+
+
+
+  String getRoomName(){
+    String roomName = 'speedMeetingNr' + this.roomID.toString();
+
+    return roomName;
+  }
+
+  String getRoomType(){
+    return this.roomType;
+  }
+
+  String getRomDescription(){
+    return this.roomDescription;
+  }
 }
 
 class _VideoConferenceState extends State<VideoConference> {
   final serverText = TextEditingController();
-  final roomText = TextEditingController(text: "plugintestroom");
-  final subjectText = TextEditingController(text: "Spped Meeting");
+  TextEditingController roomText = TextEditingController();
+  TextEditingController subjectText = TextEditingController();
   final nameText = TextEditingController(text: "User");
   final emailText = TextEditingController(text: "example@email.com");
   var isAudioOnly = true;
   var isAudioMuted = true;
-  var isVideoMuted = true;
+  var isVideoMuted = true;                   
 
   @override
   void initState() {
@@ -41,10 +63,15 @@ class _VideoConferenceState extends State<VideoConference> {
 
   @override
   Widget build(BuildContext context) {
+    
+    roomText.text = widget.getRoomName();
+    subjectText.text = widget.getRoomType();
+
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Create Jitsi Meeting'),
+          title: const Text('Meeting Settings'),
+          backgroundColor: Colors.redAccent[100],
         ),
         body: Container(
           padding: const EdgeInsets.symmetric(
@@ -113,6 +140,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   title: Text("Audio Only"),
                   value: isAudioOnly,
                   onChanged: _onAudioOnlyChanged,
+                  checkColor: Colors.redAccent[100],
                 ),
                 SizedBox(
                   height: 16.0,
@@ -121,6 +149,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   title: Text("Audio Muted"),
                   value: isAudioMuted,
                   onChanged: _onAudioMutedChanged,
+                  checkColor: Colors.redAccent[100],
                 ),
                 SizedBox(
                   height: 16.0,
@@ -129,6 +158,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   title: Text("Video Muted"),
                   value: isVideoMuted,
                   onChanged: _onVideoMutedChanged,
+                  checkColor: Colors.redAccent[100],
                 ),
                 Divider(
                   height: 48.0,
@@ -145,7 +175,7 @@ class _VideoConferenceState extends State<VideoConference> {
                       "Join Meeting",
                       style: TextStyle(color: Colors.white),
                     ),
-                    color: Colors.blue,
+                    color: Colors.redAccent[100],
                   ),
                 ),
                 SizedBox(
