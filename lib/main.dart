@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'videoConference.dart';
 import 'session.dart';
 import 'register.dart';
 
@@ -48,7 +47,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fontSize: 80.0, fontWeight: FontWeight.bold)),
                   ),
                   Container(
-                    padding: EdgeInsets.fromLTRB(220.0, 175.0, 0.0, 0.0),
+                    padding: EdgeInsets.fromLTRB(200.0, 175.0, 0.0, 0.0),
                     child: Text('.',
                         style: TextStyle(
                             fontSize: 80.0,
@@ -108,7 +107,11 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.green,
                         elevation: 7.0,
                         child: GestureDetector(
-                          onTap: () {},
+                          onTap: () {
+                            Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => CreateSession()));
+                          },
                           child: Center(
                             child: Text(
                               'LOGIN',
@@ -117,6 +120,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                   fontWeight: FontWeight.bold,
                                   fontFamily: 'Montserrat'),
                             ),
+                            
                           ),
                         ),
                       ),
