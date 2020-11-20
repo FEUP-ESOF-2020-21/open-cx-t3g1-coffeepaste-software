@@ -58,11 +58,9 @@ In these times when almost one-third of the world population is staying at home,
 ---
 ## Requirements
 
-<img src="/Docs/Usercases.pdf" alt="UserCases UML" height="300" width="600"/>
+### Use case diagram
 
-
-
-### Use case diagram 
+<img src="/Images/user_cases.png" alt="UserCases UML" height="300" width="600"/>
 
 Create a use-case diagram in UML with all high-level use cases possibly addressed by your module.
 
