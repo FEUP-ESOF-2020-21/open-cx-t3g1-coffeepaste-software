@@ -25,9 +25,13 @@ Please contact us!
 Thank you!
 
 Amanda de Oliveira Silva
+
 Bernardo da Silva Moço de Soares Ramalho
+
 Carolina Rosemback Guilhermino
+
 Isla Patrícia Loureiro Cassamo
+
 João Basto do Rosário
 
 ---
