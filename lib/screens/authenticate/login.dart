@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/wrapper.dart';
+import 'package:flutter_app/services/auth.dart';
 import '../jitsii/session.dart';
 import 'register.dart';
 
@@ -25,6 +26,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+
+  final AuthService _auth = AuthService();
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -108,10 +112,17 @@ class _MyHomePageState extends State<MyHomePage> {
                         color: Colors.green,
                         elevation: 7.0,
                         child: GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                            context,
-                            MaterialPageRoute(builder: (context) => CreateSession()));
+                          onTap: () async {
+                            dynamic res = await _auth.signInAnon();
+                            if(res == null){
+                              print('sign in error');
+                            } else {
+                              print('signed in ');
+                              print(res.uid);
+                            }
+                            //Navigator.push(
+                            //context,
+                            //MaterialPageRoute(builder: (context) => CreateSession()));
                           },
                           child: Center(
                             child: Text(
