@@ -2,7 +2,7 @@
 
 Welcome to the documentation pages of the Clip Meet!
 
-You can find here detailed about the Clip Meet, hereby mentioned as module, from a high-level vision to low-level implementation decisions, a kind of Software Development Report, organized by discipline (as of RUP): 
+You can find here detailed about Clip Meet, hereby mentioned as a module from a high-level vision to low-level implementation decisions, a Software Development Report organized by discipline (as of RUP): 
 
 * Business modeling 
   * [Product Vision](#Product-Vision)
@@ -34,7 +34,7 @@ João Basto do Rosário
 
 ## Product Vision
 
-In this new era  where online meetings are a big part of our contact with the outside world, this application comes to solve the organizing gap that exists for virtual arrangement. Provide the best environment for speed networking, through computation and matching algorithms in order to make the experience smooth and effective.
+In this new era where online meetings are a big part of our contact with the outside world, this application comes to solve the organizing gap that exists for virtual arrangement. Clip Meet provides the best environment for speed networking through computation and matching algorithms in order to make the experience smooth and effective.
 
 
 **Clipped meetings, live changing encounters.**
@@ -42,11 +42,11 @@ In this new era  where online meetings are a big part of our contact with the ou
 ---
 ## Elevator Pitch
 
-Our group develops a mobile application that people can use to participate in Speed networkings through a matching algorithm remotely. This means that after answering a few questions, our user will be matched with other people with similar interests through a video conference.
+The team is developing a mobile application that people can use to participate in Speed networkings remotely that makes use of a  matching algorithm. This means that after answering a few questions, our user will be matched with other people with similar interests for their meet through a video conference.
 
-We care about our user experience in speed meetings. In order to make the experience more agreeable, and in some way funnier, we provide the option of generating matches. This way ensures more smooth and effective encounters. 
+We care about our user experience in speed meetings. In order to make the experience more agreeable, and in some way funnier, we provide the option of generating matches, which ensures more enjoyable and oportunistic encounters. 
 
-After effectuating the login, a sort of questions are arranged. The user has a speed networking session, after this, they can evaluate the matches and request interest future connection people contacts. 
+After effectuating the login, and signing up to the meeting of desire, a selection of questions are arranged that best describe the meeting at hand. After the experience of the speed networking session, the user can evaluate the matches and request the information of people that he has the interest developing future connections. 
 
 In these times when almost one-third of the world population is staying at home, how are you increasing our network?
 
