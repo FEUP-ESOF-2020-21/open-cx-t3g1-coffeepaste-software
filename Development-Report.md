@@ -58,7 +58,7 @@ In these times when almost one-third of the world population is staying at home,
 ---
 ## Requirements
 
-<img src="/Docs/Usercases" alt="MVC UML" height="300" width="600"/>
+<img src="/Docs/Usercases.pdf" alt="UserCases UML" height="300" width="600"/>
 
 
 
