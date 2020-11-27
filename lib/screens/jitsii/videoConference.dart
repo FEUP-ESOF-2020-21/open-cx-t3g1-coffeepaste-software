@@ -71,7 +71,7 @@ class _VideoConferenceState extends State<VideoConference> {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Meeting Settings'),
-          backgroundColor: Colors.redAccent[100],
+          backgroundColor: Colors.green,
         ),
         body: Container(
           padding: const EdgeInsets.symmetric(
@@ -140,7 +140,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   title: Text("Audio Only"),
                   value: isAudioOnly,
                   onChanged: _onAudioOnlyChanged,
-                  checkColor: Colors.redAccent[100],
+                  checkColor: Colors.green,
                 ),
                 SizedBox(
                   height: 16.0,
@@ -149,7 +149,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   title: Text("Audio Muted"),
                   value: isAudioMuted,
                   onChanged: _onAudioMutedChanged,
-                  checkColor: Colors.redAccent[100],
+                  checkColor: Colors.green,
                 ),
                 SizedBox(
                   height: 16.0,
@@ -158,7 +158,7 @@ class _VideoConferenceState extends State<VideoConference> {
                   title: Text("Video Muted"),
                   value: isVideoMuted,
                   onChanged: _onVideoMutedChanged,
-                  checkColor: Colors.redAccent[100],
+                  checkColor: Colors.green,
                 ),
                 Divider(
                   height: 48.0,
@@ -175,7 +175,7 @@ class _VideoConferenceState extends State<VideoConference> {
                       "Join Meeting",
                       style: TextStyle(color: Colors.white),
                     ),
-                    color: Colors.redAccent[100],
+                    color: Colors.green,
                   ),
                 ),
                 SizedBox(
