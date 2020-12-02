@@ -60,7 +60,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
               crossAxisAlignment: CrossAxisAlignment.start,
               children:<Widget> [
                 FlatButton(
-                  child: Text('Account settings',
+                  child: Text('Account settings \u{2795}',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20)
@@ -143,7 +143,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                               child: Material(
                                   borderRadius: BorderRadius.circular(20.0),
                                   shadowColor: Colors.lightBlue[400],
-                                  color: Colors.,
+                                  color: Colors.blueAccent,
                                   elevation: 7.0,
                                   child: GestureDetector(
                                     onTap: () {
