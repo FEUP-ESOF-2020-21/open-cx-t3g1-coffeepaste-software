@@ -36,12 +36,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     widthh= size.width;
     heightt=size.height;
     return Scaffold(
-        body: Stack(
-          children: <Widget>[
-            menu(context),
-            home(context),
-          ],
-        )
+      body: Stack(
+        children: <Widget>[
+          menu(context),
+          home(context),
+        ],
+      )
     );
   }
 
@@ -121,16 +121,16 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Text('Clip Meet', style: TextStyle(fontSize:24,color: Colors.green[400]),),
-                      InkWell(child: Icon(Icons.person, color: Colors.green[400]), onTap: (){
-                        setState(() {
-                          if (isCollapsed)_controller.forward();
-                          else _controller.reverse();
-                          isCollapsed= !isCollapsed;
-                        });
-                      }
-                      ),
-                    ],
+                    Text('Clip Meet', style: TextStyle(fontSize:24,color: Colors.green[400]),),
+                    InkWell(child: Icon(Icons.person, color: Colors.green[400]), onTap: (){
+                      setState(() {
+                        if (isCollapsed)_controller.forward();
+                        else _controller.reverse();
+                        isCollapsed= !isCollapsed;
+                      });
+                     }
+                    ),
+                  ],
                   ),
                   SizedBox(height: 200.0),
                   Column(
@@ -202,3 +202,4 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     );
   }
 }
+
