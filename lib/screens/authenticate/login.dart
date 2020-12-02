@@ -134,8 +134,6 @@ class _MyHomePageState extends State<MyHomePage> {
                                   dynamic result = await _auth.SignInWithEmailAndPassword(email, password);
                                   if(result == null){
                                     setState(()=> error = 'Password and/or Email are/is Wrong');
-                                  }else{
-                                    Navigator.of(context).pop();
                                   }
                                 }
                                 //Navigator.push(
