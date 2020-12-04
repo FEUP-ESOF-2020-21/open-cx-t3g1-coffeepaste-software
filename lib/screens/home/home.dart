@@ -49,7 +49,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     return SlideTransition(
       position: _slideAnimatin,
       child: Container(
-        color: Colors.lightBlue[400],
+        color: Colors.green[400],
         child: Padding(
           padding: const EdgeInsets.only(right:16.0),
           child: Align(
@@ -145,8 +145,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                           child: Center(
                               child: Material(
                                   borderRadius: BorderRadius.circular(20.0),
-                                  shadowColor: Colors.lightBlue[400],
-                                  color: Colors.blueAccent,
+                                  shadowColor: Colors.green[400],
+                                  color: Colors.green,
                                   elevation: 7.0,
                                   child: GestureDetector(
                                     onTap: () {
@@ -173,8 +173,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                           child: Center(
                               child: Material(
                                   borderRadius: BorderRadius.circular(20.0),
-                                  shadowColor: Colors.blueAccent,
-                                  color: Colors.lightBlue[400],
+                                  shadowColor: Colors.green,
+                                  color: Colors.green[400],
                                   elevation: 7.0,
                                   child: GestureDetector(
                                     onTap: () {
