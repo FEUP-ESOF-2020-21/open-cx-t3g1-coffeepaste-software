@@ -132,6 +132,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                       }
                       ),
                     ],
+                  ),
 
        
                   SizedBox(height: 200.0),
