@@ -84,30 +84,25 @@ In these times when almost one-third of the world population is staying at home,
 *Actor: Participant
 *Description: This feature gives the participant the option of choosing a room with a specific theme and participating in the selected speed meeting.
 
+
 ### User stories
-
-**Link:** https://trello.com/b/pBEOztO7/coffepaste-project
-
-This section will contain the requirements of the product described as **user stories**, organized in a global **[user story map](https://plan.io/blog/user-story-mapping/)** with **user roles** or **themes**.
-
-For each theme, or role, you may add a small description. User stories should be detailed in the tool you decided to use for project management (e.g. trello or github projects).
-
-A user story is a description of desired functionality told from the perspective of the user or customer. A starting template for the description of a user story is 
-
-*As a < user role >, I want < goal > so that < reason >.*
+The following topics are a report, of the roles in the user stories:
 
 
-**INVEST in good user stories**. 
-You may add more details after, but the shorter and complete, the better. In order to decide if the user story is good, please follow the [INVEST guidelines](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/).
+####User
+The most comprehensive role, includes every user of the Speed meeting, Organizer and Participant.  Utilizes all the features available.
 
-**User interface mockups**.
-After the user story text, you should add a draft of the corresponding user interfaces, a simple mockup or draft, if applicable.
+#####Organizer
+This roll is assigned for the uses who wants to create a separate room with a theme i
+of his choice. The organizer also can participate in the laughed speed meeting, receiving a report of the other users at the end of the section.
 
-**Acceptance tests**.
-For each user story you should write also the acceptance tests (textually in Gherkin), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
+####Participant
+This user can choose between the already created thematics and participate in it.
 
-**Value and effort**.
-At the end, it is good to add a rough indication of the value of the user story to the customers (e.g. [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) method) and the team should add an estimation of the effort to implement it, for example, using t-shirt sizes (XS, S, M, L, XL).
+
+Our boar can be accessed by the  succeeding link:
+ https://trello.com/b/pBEOztO7/coffepaste-project
+
 
 ### Domain model
 
