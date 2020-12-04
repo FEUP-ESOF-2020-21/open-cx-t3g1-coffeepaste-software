@@ -106,7 +106,7 @@ Our boar can be accessed by the  succeeding link:
 
 ### Domain model
 
----
+
 
 ## Architecture and Design
 
