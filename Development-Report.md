@@ -75,7 +75,7 @@ In these times when almost one-third of the world population is staying at home,
 * Actor: User
 * Description: This feature is for the user write a report comment about the couples made during the speed meeting.
 ##### Get the contacts of others users
-		* Actor: User
+* Actor: User
 * Description: This use has the purpose of, after evaluating the maths, the user can get in contact if the users they like the most.
 ##### Create a thematic Meet
 * Actor: Organizer
@@ -89,14 +89,14 @@ In these times when almost one-third of the world population is staying at home,
 The following topics are a report, of the roles in the user stories:
 
 
-####User
+#### User
 The most comprehensive role, includes every user of the Speed meeting, Organizer and Participant.  Utilizes all the features available.
 
-#####Organizer
+##### Organizer
 This roll is assigned for the uses who wants to create a separate room with a theme i
 of his choice. The organizer also can participate in the laughed speed meeting, receiving a report of the other users at the end of the section.
 
-####Participant
+#### Participant
 This user can choose between the already created thematics and participate in it.
 
 
