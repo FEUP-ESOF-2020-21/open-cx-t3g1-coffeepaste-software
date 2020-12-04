@@ -54,55 +54,59 @@ After effectuating the login, and signing up to the meeting of desire, a selecti
 
 In these times when almost one-third of the world population is staying at home, how are you increasing our network?
 
-
 ---
 ## Requirements
 
 ### Use case diagram
 
+### Use case diagram
+
 <p align="center"> <img src="/images/user_cases.png" alt="User Cases"/> </p>
 
-Create a use-case diagram in UML with all high-level use cases possibly addressed by your module.
+#### Login:
+* Actor: User
+* Description: This use case exists so that a user can login into the clip meet.
+* Setting: Once the user has already created an account, he will successfully login, otherwise the user must create a log using a valid email and password.
+####Join a Meeting:
+* Actor: User
+*Description: This use is for the user to be able to talk with the participants of the meeting.
 
-Give each use case a concise, results-oriented name. Use cases should reflect the tasks the user needs to be able to accomplish using the system. Include an action verb and a noun. 
+#####Evaluate a Meeting
+*Actor: User
+*Description: This feature is for the user write a report comment about the couples made during the speed meeting.
+#####Get the contacts of others users
+		*Actor: User
+*Description: This use has the purpose of, after evaluating the maths, the user can get in contact if the users they like the most.
+#####Create a thematic Meet
+*Actor: Organizer
+*Description: This feature has the possibility of a user becoming an organizer and creating a room, a thematic Meet. The organizer must choose a theme for the speed meeting, and write a brief description of the purpose of this speed meeting.
+#####Choose a Meet
+*Actor: Participant
+*Description: This feature gives the participant the option of choosing a room with a specific theme and participating in the selected speed meeting.
 
-Briefly describe each use case mentioning the following:
-
-* **Actor**. Name only the actor that will be initiating this use case, i.e. a person or other entity external to the software system being specified who interacts with the system and performs use cases to accomplish tasks. 
-* **Description**. Provide a brief description of the reason for and outcome of this use case, or a high-level description of the sequence of actions and the outcome of executing the use case. 
-* **Preconditions and Postconditions**. Include any activities that must take place, or any conditions that must be true, before the use case can be started (preconditions). Describe also the state of the system at the conclusion of the use case execution (postconditions). 
-
-* **Normal Flow**. Provide a detailed description of the user actions and system responses that will take place during execution of the use case under normal, expected conditions. This dialog sequence will ultimately lead to accomplishing the goal stated in the use case name and description. This is best done as a numbered list of actions performed by the actor, alternating with responses provided by the system. 
-* **Alternative Flows and Exceptions**. Document other, legitimate usage scenarios that can take place within this use case, stating any differences in the sequence of steps that take place. In addition, describe any anticipated error conditions that could occur during execution of the use case, and define how the system is to respond to those conditions. 
 
 ### User stories
-
-**Link:** https://trello.com/b/pBEOztO7/coffepaste-project
-
-This section will contain the requirements of the product described as **user stories**, organized in a global **[user story map](https://plan.io/blog/user-story-mapping/)** with **user roles** or **themes**.
-
-For each theme, or role, you may add a small description. User stories should be detailed in the tool you decided to use for project management (e.g. trello or github projects).
-
-A user story is a description of desired functionality told from the perspective of the user or customer. A starting template for the description of a user story is 
-
-*As a < user role >, I want < goal > so that < reason >.*
+The following topics are a report, of the roles in the user stories:
 
 
-**INVEST in good user stories**. 
-You may add more details after, but the shorter and complete, the better. In order to decide if the user story is good, please follow the [INVEST guidelines](https://xp123.com/articles/invest-in-good-stories-and-smart-tasks/).
+####User
+The most comprehensive role, includes every user of the Speed meeting, Organizer and Participant.  Utilizes all the features available.
 
-**User interface mockups**.
-After the user story text, you should add a draft of the corresponding user interfaces, a simple mockup or draft, if applicable.
+#####Organizer
+This roll is assigned for the uses who wants to create a separate room with a theme i
+of his choice. The organizer also can participate in the laughed speed meeting, receiving a report of the other users at the end of the section.
 
-**Acceptance tests**.
-For each user story you should write also the acceptance tests (textually in Gherkin), i.e., a description of scenarios (situations) that will help to confirm that the system satisfies the requirements addressed by the user story.
+####Participant
+This user can choose between the already created thematics and participate in it.
 
-**Value and effort**.
-At the end, it is good to add a rough indication of the value of the user story to the customers (e.g. [MoSCoW](https://en.wikipedia.org/wiki/MoSCoW_method) method) and the team should add an estimation of the effort to implement it, for example, using t-shirt sizes (XS, S, M, L, XL).
+
+Our boar can be accessed by the  succeeding link:
+ https://trello.com/b/pBEOztO7/coffepaste-project
+
 
 ### Domain model
 
----
+
 
 ## Architecture and Design
 

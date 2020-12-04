@@ -94,6 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           validator: (val) => val.length < 6 ? 'Please supply a valid password' : null,
                           onChanged: (val){
                             setState(() => password = val);
+
                           },
                           decoration: InputDecoration(
                               labelText: 'PASSWORD',
@@ -178,7 +179,8 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     )
                   ],
-                )
+
+
               ],
             )
         )
