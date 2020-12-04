@@ -61,7 +61,7 @@ In these times when almost one-third of the world population is staying at home,
 
 ### Use case diagram
 
-<p align="center"> <img src="/images/user_cases.png" alt="User Cases"/> </p>
+<p align="center"> <img src="/images/userCases.png" alt="User Cases"/> </p>
 
 #### Login:
 * Actor: User
