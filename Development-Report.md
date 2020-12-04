@@ -59,6 +59,8 @@ In these times when almost one-third of the world population is staying at home,
 
 ### Use case diagram
 
+### Use case diagram
+
 <p align="center"> <img src="/images/user_cases.png" alt="User Cases"/> </p>
 
 #### Login:
@@ -68,7 +70,20 @@ In these times when almost one-third of the world population is staying at home,
 ####Join a Meeting:
 * Actor: User
 *Description: This use is for the user to be able to talk with the participants of the meeting.
-#### Not finished
+
+#####Evaluate a Meeting
+*Actor: User
+*Description: This feature is for the user write a report comment about the couples made during the speed meeting.
+#####Get the contacts of others users
+		*Actor: User
+*Description: This use has the purpose of, after evaluating the maths, the user can get in contact if the users they like the most.
+#####Create a thematic Meet
+*Actor: Organizer
+*Description: This feature has the possibility of a user becoming an organizer and creating a room, a thematic Meet. The organizer must choose a theme for the speed meeting, and write a brief description of the purpose of this speed meeting.
+#####Choose a Meet
+*Actor: Participant
+*Description: This feature gives the participant the option of choosing a room with a specific theme and participating in the selected speed meeting.
+
 ### User stories
 
 **Link:** https://trello.com/b/pBEOztO7/coffepaste-project
