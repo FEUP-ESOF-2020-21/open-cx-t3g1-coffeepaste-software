@@ -59,44 +59,42 @@ In these times when almost one-third of the world population is staying at home,
 
 ### Use case diagram
 
-### Use case diagram
-
-<p align="center"> <img src="/images/user_cases.png" alt="User Cases"/> </p>
+<p align="center"> <img src="/images/userCases.png" alt="User Cases"/> </p>
 
 #### Login:
 * Actor: User
 * Description: This use case exists so that a user can login into the clip meet.
 * Setting: Once the user has already created an account, he will successfully login, otherwise the user must create a log using a valid email and password.
-####Join a Meeting:
+#### Join a Meeting:
 * Actor: User
-*Description: This use is for the user to be able to talk with the participants of the meeting.
+* Description: This use is for the user to be able to talk with the participants of the meeting.
 
-#####Evaluate a Meeting
-*Actor: User
-*Description: This feature is for the user write a report comment about the couples made during the speed meeting.
-#####Get the contacts of others users
-		*Actor: User
-*Description: This use has the purpose of, after evaluating the maths, the user can get in contact if the users they like the most.
-#####Create a thematic Meet
-*Actor: Organizer
-*Description: This feature has the possibility of a user becoming an organizer and creating a room, a thematic Meet. The organizer must choose a theme for the speed meeting, and write a brief description of the purpose of this speed meeting.
-#####Choose a Meet
-*Actor: Participant
-*Description: This feature gives the participant the option of choosing a room with a specific theme and participating in the selected speed meeting.
+##### Evaluate a Meeting
+* Actor: User
+* Description: This feature is for the user write a report comment about the couples made during the speed meeting.
+##### Get the contacts of others users
+* Actor: User
+* Description: This use has the purpose of, after evaluating the maths, the user can get in contact if the users they like the most.
+##### Create a thematic Meet
+* Actor: Organizer
+* Description: This feature has the possibility of a user becoming an organizer and creating a room, a thematic Meet. The organizer must choose a theme for the speed meeting, and write a brief description of the purpose of this speed meeting.
+##### Choose a Meet
+* Actor: Participant
+* Description: This feature gives the participant the option of choosing a room with a specific theme and participating in the selected speed meeting.
 
 
 ### User stories
 The following topics are a report, of the roles in the user stories:
 
 
-####User
+#### User
 The most comprehensive role, includes every user of the Speed meeting, Organizer and Participant.  Utilizes all the features available.
 
-#####Organizer
+##### Organizer
 This roll is assigned for the uses who wants to create a separate room with a theme i
 of his choice. The organizer also can participate in the laughed speed meeting, receiving a report of the other users at the end of the section.
 
-####Participant
+#### Participant
 This user can choose between the already created thematics and participate in it.
 
 

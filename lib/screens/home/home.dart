@@ -36,12 +36,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     widthh= size.width;
     heightt=size.height;
     return Scaffold(
-      body: Stack(
-        children: <Widget>[
-          menu(context),
-          home(context),
-        ],
-      )
+        body: Stack(
+          children: <Widget>[
+            menu(context),
+            home(context),
+          ],
+        )
     );
   }
 
@@ -49,7 +49,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     return SlideTransition(
       position: _slideAnimatin,
       child: Container(
-        color: Colors.lightBlue[400],
+        color: Colors.green[400],
         child: Padding(
           padding: const EdgeInsets.only(right:16.0),
           child: Align(
@@ -121,17 +121,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                    Text('Clip Meet', style: TextStyle(fontSize:24,color: Colors.lightBlue[400]),),
-                    InkWell(child: Icon(Icons.person, color: Colors.blueAccent[300]), onTap: (){
-                      setState(() {
-                        if (isCollapsed)_controller.forward();
-                        else _controller.reverse();
-                        isCollapsed= !isCollapsed;
-                      });
-                     }
-                    ),
-                  ],
+
+                      Text('Clip Meet', style: TextStyle(fontSize:24,color: Colors.green[400]),),
+                      InkWell(child: Icon(Icons.person, color: Colors.green[400]), onTap: (){
+                        setState(() {
+                          if (isCollapsed)_controller.forward();
+                          else _controller.reverse();
+                          isCollapsed= !isCollapsed;
+                        });
+                      }
+                      ),
+                    ],
                   ),
+
+       
                   SizedBox(height: 200.0),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.center,
@@ -142,8 +145,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                           child: Center(
                               child: Material(
                                   borderRadius: BorderRadius.circular(20.0),
-                                  shadowColor: Colors.lightBlue[400],
-                                  color: Colors.blueAccent,
+                                  shadowColor: Colors.green[400],
+                                  color: Colors.green,
                                   elevation: 7.0,
                                   child: GestureDetector(
                                     onTap: () {
@@ -170,8 +173,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                           child: Center(
                               child: Material(
                                   borderRadius: BorderRadius.circular(20.0),
-                                  shadowColor: Colors.blueAccent,
-                                  color: Colors.lightBlue[400],
+                                  shadowColor: Colors.green,
+                                  color: Colors.green[400],
                                   elevation: 7.0,
                                   child: GestureDetector(
                                     onTap: () {
@@ -202,4 +205,3 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     );
   }
 }
-
