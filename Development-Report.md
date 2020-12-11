@@ -61,10 +61,14 @@ In these times when almost one-third of the world population is staying at home,
 
 <p align="center"> <img src="/images/userCases.png" alt="User Cases"/> </p>
 
-#### Login:
+#### Log in:
 * Actor: User
-* Description: This use case exists so that a user can login into the clip meet.
-* Setting: Once the user has already created an account, he will successfully login, otherwise the user must create a log using a valid email and password.
+* Description: This use case exists so that a user can login into our app.
+* Preconditions: The user must not already be logged on and it must be the first thing the user does when it open the app.
+* Postconditions: The app will ask the user if he wants to joing a meeting or create one.
+* Normal Flow: The user will be meet with two text fields. The top one will ask for the Username and the bottom one for the password. After writin both in each text field, the user should press a button labeled **Log in**. If the username and password match the ones in the database, the user will procced to the page where he will choose if he wants to join a meeting or create one.
+* Alternative Flows and Exceptions: If the password and username don't match, then an error message will appear telling the user that the username or the password is wrong.
+
 #### Join a Meeting:
 * Actor: User
 * Description: This use is for the user to be able to talk with the participants of the meeting.
