@@ -46,13 +46,13 @@ In this new era where online meetings are a big part of our contact with the out
 ---
 ## Elevator Pitch
 
-The team is developing a mobile application that people can use to participate in Speed networkings remotely that makes use of a  matching algorithm. This means that after answering a few questions, our user will be matched with other people with similar interests for their meet through a video conference.
+The team is developing a mobile application that people can use to participate in speed networkings remotely. After answering a few questions, our user will be matched with other people with similar interests through a video conference or chat conference.
 
-We care about our user experience in speed meetings. In order to make the experience more agreeable, and in some way funnier, we provide the option of generating matches, which ensures more enjoyable and oportunistic encounters. 
+We care about our user experience in speed meetings. In order to make the experience more enjoyable, we developed an easy and compact UI tailored to perform video and message meetings. 
 
-After effectuating the login, and signing up to the meeting of desire, a selection of questions are arranged that best describe the meeting at hand. After the experience of the speed networking session, the user can evaluate the matches and request the information of people that he has the interest developing future connections. 
+After logging in, and signing up to the meeting, a selection of questions are arranged that best describe the meeting at hand. After the speed networking session, the user can evaluate the matches and request the information of people that he has interest to contact in the future. 
 
-In these times when almost one-third of the world population is staying at home, how are you increasing our network?
+In these times when almost one-third of the world population is staying at home, how are you devoloping your network?
 
 ---
 ## Requirements
