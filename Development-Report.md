@@ -70,18 +70,27 @@ In these times when almost one-third of the world population is staying at home,
 * Alternative Flows and Exceptions: If the password and username don't match, then an error message will appear telling the user that the username or the password is wrong.
 
 #### Join a Meeting:
-* Actor: User
-* Description: This use is for the user to be able to talk with the participants of the meeting.
+* Actor: Particpant
+* Description: This use case is for a participant to be able to join a meeting.
+* Preconditions: The participant must be logged in and have a valid meeting code.
+* Postconditions: The participant will be able to connect with other participants that are in the same meeting.
+* Normal Flow: The participant will be asked to enter the code of the meeting he wants to join. After submiting a valid code, the participant will be presented with a screen that shows all the people in that session.
+* Alternative Flows and Exceptions: If the code doesn't correspond to a valid meeting then an error message will appears telling the participant that he is trying to join a meeting that doens't exists.
 
 ##### Evaluate a Meeting
 * Actor: User
-* Description: This feature is for the user write a report comment about the couples made during the speed meeting.
+* Description: After every meeting each user that was a part of it (both the organiser and the participants) rate the meeting in a scale of 0 to 5. After that rating, the user may leave some written feedback, both for the app and for the meeting itself.
+* Preconditions: The user must be part of a meeting as the meeting ends.
+* Postconditions: If the user is a organiser, the app will go back do the main page (where the user may choose if he wants to create another meeting or join one). If the user is a participant, he will have the oportunity to get the oportunity to have the contacts of the other participants.
+* Normal Flow: The user will be presented with a box that will ask him to rate the meeting from 0 to 5 (represented by empty stars that the user can select how many he wants). After this, a two text box will appear, one for the user to give written feedback to the meeting itself and the other one to give feedback about the app.
+* Alternative Flows and Exceptions: If the user doesn't want to give any rating he may skips this step. He may also only rate the meeting and skip the written feedback.
+
 ##### Get the contacts of others users
 * Actor: User
 * Description: This use has the purpose of, after evaluating the maths, the user can get in contact if the users they like the most.
 ##### Create a thematic Meet
-* Actor: Organizer
-* Description: This feature has the possibility of a user becoming an organizer and creating a room, a thematic Meet. The organizer must choose a theme for the speed meeting, and write a brief description of the purpose of this speed meeting.
+* Actor: Organiser
+* Description: This feature has the possibility of a user becoming an organiser and creating a room, a thematic Meet. The organiser must choose a theme for the speed meeting, and write a brief description of the purpose of this speed meeting.
 ##### Choose a Meet
 * Actor: Participant
 * Description: This feature gives the participant the option of choosing a room with a specific theme and participating in the selected speed meeting.
@@ -92,11 +101,11 @@ The following topics are a report, of the roles in the user stories:
 
 
 #### User
-The most comprehensive role, includes every user of the Speed meeting, Organizer and Participant.  Utilizes all the features available.
+The most comprehensive role, includes every user of the Speed meeting, Organiser and Participant.  Utilizes all the features available.
 
-##### Organizer
+##### Organiser
 This roll is assigned for the uses who wants to create a separate room with a theme i
-of his choice. The organizer also can participate in the laughed speed meeting, receiving a report of the other users at the end of the section.
+of his choice. The organiser also can participate in the laughed speed meeting, receiving a report of the other users at the end of the section.
 
 #### Participant
 This user can choose between the already created thematics and participate in it.
