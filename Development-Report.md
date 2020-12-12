@@ -66,9 +66,16 @@ In these times when almost one-third of the world population is staying at home,
 * Description: This use case exists so that a user can login into our app.
 * Preconditions: The user must not already be logged on and it must be the first thing the user does when it open the app.
 * Postconditions: The app will ask the user if he wants to joing a meeting or create one.
-* Normal Flow: The user will be meet with two text fields. The top one will ask for the Username and the bottom one for the password. After writin both in each text field, the user should press a button labeled **Log in**. If the username and password match the ones in the database, the user will procced to the page where he will choose if he wants to join a meeting or create one.
+* Normal Flow: The user will be meet with two text fields. The top one will ask for the Username and the bottom one for the password. After writing both in each text field, the user should press a button labeled **Log in**. If the username and password match the ones in the database, the user will procced to the page where he will choose if he wants to join a meeting or create one.
 * Alternative Flows and Exceptions: If the password and username don't match, then an error message will appear telling the user that the username or the password is wrong.
 
+##### Create a Meeting
+* Actor: Organiser
+* Description: The organiser has the power to create a Meeting tailored to his needs. He may choose the topic of the meeting, the max time each participant can talk to each other and how many people may join the meeting.
+* Preconditions: The organiser must be looged in and in the main page.
+* Postconditions: The app will present the organizer with the code to share with other people so the participants may join the meeting.
+* Normal Flow: In the main page, the organizer will click on the "Create Meeting" button. After that, he will be asked to choose the topic of the meeting, the maximum time each participant can talk to each other and how many people can join the meeting. When evertything is filled the organiser can create the meeting by clicking on the "Create" button. He will then be prompt with a box containing the meeting code so he can share it.
+* Alternative Flows and Exceptions: If the user doens't input the maximum time and how many people can join, they will be given a default value. The topic of the meeting if mandatory to create the meeting, giving an error message when the user tries to create a meeting while the text field is empty.
 #### Join a Meeting:
 * Actor: Particpant
 * Description: This use case is for a participant to be able to join a meeting.
@@ -92,14 +99,6 @@ In these times when almost one-third of the world population is staying at home,
 * Postconditions: The app will go back do the main page (where the user may choose if he wants to create another meeting or join one).
 * Normal Flow: The participant will be presented with a list with all names of the people that he has meet in the meeting. If the user clicks on a name, the information about that person will be shown on the screen. The user may click on any number of names. After the user has seen the contacts of the people that he wanted, he may click a button to return to the main page.
 * Alternative Flows and Execptions: The participant may not click on any name and just click on the button to go to the main page.
-
-##### Create a thematic Meet
-* Actor: Organiser
-* Description: This feature has the possibility of a user becoming an organiser and creating a room, a thematic Meet. The organiser must choose a theme for the speed meeting, and write a brief description of the purpose of this speed meeting.
-##### Choose a Meet
-* Actor: Participant
-* Description: This feature gives the participant the option of choosing a room with a specific theme and participating in the selected speed meeting.
-
 
 ### User stories
 The following topics are a report, of the roles in the user stories:
