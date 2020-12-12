@@ -85,9 +85,14 @@ In these times when almost one-third of the world population is staying at home,
 * Normal Flow: The user will be presented with a box that will ask him to rate the meeting from 0 to 5 (represented by empty stars that the user can select how many he wants). After this, a two text box will appear, one for the user to give written feedback to the meeting itself and the other one to give feedback about the app.
 * Alternative Flows and Exceptions: If the user doesn't want to give any rating he may skips this step. He may also only rate the meeting and skip the written feedback.
 
-##### Get the contacts of others users
-* Actor: User
-* Description: This use has the purpose of, after evaluating the maths, the user can get in contact if the users they like the most.
+##### Get the contacts of others participants
+* Actor: Participant
+* Description: After rating the meeting and giving feedback, the participant will have the option to see the contacts of the other participants that where in the same meeting.
+* Precontitions: The participants must have been in a meeting as the meeting ended. Then the user may or may not have given feedback and rated the meeting.
+* Postconditions: The app will go back do the main page (where the user may choose if he wants to create another meeting or join one).
+* Normal Flow: The participant will be presented with a list with all names of the people that he has meet in the meeting. If the user clicks on a name, the information about that person will be shown on the screen. The user may click on any number of names. After the user has seen the contacts of the people that he wanted, he may click a button to return to the main page.
+* Alternative Flows and Execptions: The participant may not click on any name and just click on the button to go to the main page.
+
 ##### Create a thematic Meet
 * Actor: Organiser
 * Description: This feature has the possibility of a user becoming an organiser and creating a room, a thematic Meet. The organiser must choose a theme for the speed meeting, and write a brief description of the purpose of this speed meeting.
