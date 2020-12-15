@@ -115,15 +115,14 @@ of his choice. The organiser also can participate in the laughed speed meeting, 
 This user can choose between the already created thematics and participate in it.
 
 
-Our boar can be accessed by the  succeeding link:
- https://trello.com/b/pBEOztO7/coffepaste-project
-
 
 ### Domain model
 
 ---
 
 ## Architecture and Design
+The architecture of a software system, along with others roles, is responsable to control the overall system complexity, to ensure system integrity and required quality attributes.
+
 
 ### Logical architecture
 
@@ -142,10 +141,13 @@ Our boar can be accessed by the  succeeding link:
 
 ---
 ## Configuration and change management
+Configuration and change management are key activities to control change to, and maintain the integrity of, a project’s artifacts (code, models, documents).
 
-
-
+For the purpose of ESOF, we will use a very simple approach, just to manage feature requests, bug fixes, and improvements, using GitHub issues and following the GitHub flow.
 
 ---
 
 ## Project management
+We decided to use *trello* as our principal task management tool, with all of the user stories. 
+Our boar can be accessed by the  succeeding link:
+ https://trello.com/b/pBEOztO7/coffepaste-project
