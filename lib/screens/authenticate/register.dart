@@ -59,6 +59,7 @@ class _SignupPageState extends State<SignupPage> {
                         onChanged: (val){
                           setState(() => email = val);
                         },
+                        key: Key("EmailField"),
                         decoration: InputDecoration(
                             labelText: 'EMAIL',
                             labelStyle: TextStyle(
@@ -76,6 +77,7 @@ class _SignupPageState extends State<SignupPage> {
                         onChanged: (val){
                           setState(() => password = val);
                         },
+                        key: Key("PasswordField"),
                         decoration: InputDecoration(
                             labelText: 'PASSWORD ',
                             labelStyle: TextStyle(
@@ -88,6 +90,7 @@ class _SignupPageState extends State<SignupPage> {
                       ),
                       SizedBox(height: 10.0),
                       TextField(
+                        key: Key("NicknameField"),
                         decoration: InputDecoration(
                             labelText: 'NICK NAME ',
                             labelStyle: TextStyle(
@@ -106,6 +109,7 @@ class _SignupPageState extends State<SignupPage> {
                             color: Colors.green,
                             elevation: 7.0,
                             child: GestureDetector(
+                              key: Key("SignUpButton"),
                               onTap: () async {
                                 if(_formKey.currentState.validate()){
                                   dynamic result = await _auth.registerWithEmailAndPassword(email, password);
@@ -145,6 +149,7 @@ class _SignupPageState extends State<SignupPage> {
                               color: Colors.transparent,
                               borderRadius: BorderRadius.circular(20.0)),
                           child: InkWell(
+                            key: Key("GoBackButton"),
                             onTap: () {
                               Navigator.of(context).pop();
                             },
@@ -165,27 +170,6 @@ class _SignupPageState extends State<SignupPage> {
                   )
               )
           ),
-          // SizedBox(height: 15.0),
-          // Row(
-          //   mainAxisAlignment: MainAxisAlignment.center,
-          //   children: <Widget>[
-          //     Text(
-          //       'New to Spotify?',
-          //       style: TextStyle(
-          //         fontFamily: 'Montserrat',
-          //       ),
-          //     ),
-          //     SizedBox(width: 5.0),
-          //     InkWell(
-          //       child: Text('Register',
-          //           style: TextStyle(
-          //               color: Colors.green,
-          //               fontFamily: 'Montserrat',
-          //               fontWeight: FontWeight.bold,
-          //               decoration: TextDecoration.underline)),
-          //     )
-          //   ],
-          // )
         ]));
   }
 }

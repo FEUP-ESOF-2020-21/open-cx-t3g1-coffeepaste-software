@@ -149,6 +149,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                                   color: Colors.green,
                                   elevation: 7.0,
                                   child: GestureDetector(
+                                    key: Key("CreateSessionButton"),
                                     onTap: () {
                                       Navigator.push(
                                           context,
@@ -177,6 +178,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                                   color: Colors.green[400],
                                   elevation: 7.0,
                                   child: GestureDetector(
+                                    key: Key("JoinSessionButton"),
                                     onTap: () {
                                       Navigator.push(
                                           context,

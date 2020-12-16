@@ -58,6 +58,7 @@ class _CreateSessionState extends State<CreateSession> {
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
               child: TextField(
+                key: Key("ThemeField"),
                 onChanged: (String v){
                   session.setType(v);
                 } ,
@@ -68,6 +69,7 @@ class _CreateSessionState extends State<CreateSession> {
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
               child: TextField(
+                key: Key("DescriptionField"),
                 onChanged: (String v){
                   session.setDescription(v);
                 } ,
@@ -80,6 +82,7 @@ class _CreateSessionState extends State<CreateSession> {
         ), 
       ),
       floatingActionButton: FloatingActionButton.extended(
+        key: Key("CreateButton"),
         onPressed: (){
            Navigator.push(
               context,
