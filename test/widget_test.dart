@@ -6,26 +6,25 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:flutter/material.dart';
-import 'package:flutter_app/screens/jitsii/videoConference.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:flutter_app/main.dart';
+import 'package:flutter_app/screens/authenticate/login.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(VideoConference());
-
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
-
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
+  testWidgets('Log in', (WidgetTester tester) async {
+    // Find all Widgets Needed
+    final emailField = find.byKey(ValueKey("loginEmailField"));
+    final passwordField = find.byKey(ValueKey("loginPasswordField"));
+    final loginButton = find.byKey(ValueKey("loginButton"));
+    
+    // Execute the test.
+    await tester.pumpWidget(MaterialApp(home: MyHomePage()));
+    await tester.enterText(emailField, "teste3@gmail.com");
+    await tester.enterText(passwordField, "12345678");
+    await tester.tap(loginButton);
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Check the outputs
+    expect(find.byKey(ValueKey("loginEmailField")), findsOneWidget);
   });
 }

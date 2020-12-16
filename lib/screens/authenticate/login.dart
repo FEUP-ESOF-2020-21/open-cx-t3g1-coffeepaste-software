@@ -2,12 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/wrapper.dart';
 import 'package:flutter_app/services/auth.dart';
-import '../jitsii/session.dart';
 import 'register.dart';
 
-void main() => runApp(MyApp());
+void main() => runApp(Login());
 
-class MyApp extends StatelessWidget {
+class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
@@ -76,6 +75,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: Column(
                       children: <Widget>[
                         TextFormField(
+                          key: Key("loginEmailField"),
                           validator: (val) => val.isEmpty ? 'Introduce a valid email' : null,
                           onChanged: (val){
                             setState(() => email = val);
@@ -91,6 +91,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         SizedBox(height: 20.0),
                         TextFormField(
+                          key: Key("loginPasswordField"),
                           validator: (val) => val.length < 6 ? 'Please supply a valid password' : null,
                           onChanged: (val){
                             setState(() => password = val);
@@ -130,6 +131,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             color: Colors.green,
                             elevation: 7.0,
                             child: GestureDetector(
+                              key: Key("loginButton"),
                               onTap: () async {
                                 if(_formKey.currentState.validate()){
                                   dynamic result = await _auth.SignInWithEmailAndPassword(email, password);
@@ -166,6 +168,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     SizedBox(width: 5.0),
                     InkWell(
+                      key: Key("registerButton"),
                       onTap: () {
                         Navigator.of(context).pushNamed('/signup');
                       },

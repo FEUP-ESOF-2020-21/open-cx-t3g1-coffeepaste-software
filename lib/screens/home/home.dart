@@ -121,8 +121,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-
-                      Text('Clip Meet', style: TextStyle(fontSize:24,color: Colors.green[400]),),
+                                    
+                      Text( 'Clip Meet', style: TextStyle(fontSize:24,color: Colors.green[400]),),
                       InkWell(child: Icon(Icons.person, color: Colors.green[400]), onTap: (){
                         setState(() {
                           if (isCollapsed)_controller.forward();
