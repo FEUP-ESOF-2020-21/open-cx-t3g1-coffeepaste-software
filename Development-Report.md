@@ -52,7 +52,7 @@ We care about our user experience in speed meetings. In order to make the experi
 
 After logging in, and signing up to the meeting, a selection of questions are arranged that best describe the meeting at hand. After the speed networking session, the user can evaluate the matches and request the information of people that he has interest to contact in the future. 
 
-In these times when almost one-third of the world population is staying at home, how are you devoloping your network?
+In these times when almost one-third of the world population is staying at home, how are you developing your network?
 
 ---
 ## Requirements
@@ -125,8 +125,14 @@ The architecture of a software system, along with others roles, is responsable t
 
 
 ### Logical architecture
+Very used in mobile apps nowadays, the MVC, embraces the characteristics needed for this project. Therefore was the pattern chosen.
+The architectural pattern,MVC , embodies three parts. Or to be more exact it divides the application into three logical parts:
+#### Model: Directory named as the original, Model.
+#### View: Directory named as Screens in our code.
+#### Controller:  Directory named as Services, as the logical part view we decide with the purpose of clarity named different than the tradicional.
 
 ### Physical architecture
+<p align="center"> <img src="/images/DeploymentDiagram.png" alt="Deployment Diagram"/> </p>
 
 
 ### Prototype
@@ -134,6 +140,7 @@ The architecture of a software system, along with others roles, is responsable t
 ---
 
 ## Implementation
+The implementation was divided in iterations, here are the releases for each of them:
 
 ---
 ## Test
