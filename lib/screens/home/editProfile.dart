@@ -88,16 +88,16 @@ class editProfile extends StatelessWidget {
                     buildTextfield("Username", user.uid, false),
                     SizedBox(height: 25.0),
 
-                    buildTextfield("Email", "isla@isla.com", false),
+                    buildTextfield("Email",  "_userFromFirebaseUser(user.uid)", false),
 
                     SizedBox(height: 25.0),
 
-                    buildTextfield("Password", "shit", true),
+                    buildTextfield("Password", "**********", true),
                   ],
                 ),
               ),
               SizedBox(height: 40.0),
-
+/*
               Row(
                 children: [
                   OutlineButton(
@@ -129,7 +129,7 @@ class editProfile extends StatelessWidget {
                     ),
                   )
                 ],
-              )
+              )*/
 
 
 

@@ -85,6 +85,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
               children:<Widget> [
+                /*
                 FlatButton(
                   child: Text('Account settings \u{2795}',
                       style: TextStyle(
@@ -95,9 +96,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     await _auth.signOut();
                   },
                 ),
+                */
+
                 SizedBox(height:10),
                 FlatButton(
-                  child: Text('Edit Profile',
+                  key: Key('editProfile'),
+                  child: Text('Profile',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20)
