@@ -140,21 +140,28 @@ The architectural pattern,MVC , embodies three parts. Or to be more exact it div
 ---
 
 ## Implementation
-The implementation was divided in iterations, here are the releases for each of them:
 
+The implementation was divided in iterations, here are the releases for each of them:
+  -[Iteration 1](https://github.com/FEUP-ESOF-2020-21/open-cx-t3g1-coffeepaste-software/releases/tag/v1.0)
+  -[Iteration 2](https://github.com/FEUP-ESOF-2020-21/open-cx-t3g1-coffeepaste-software/releases/tag/v2.0)
+  -[Iteration 3](https://github.com/FEUP-ESOF-2020-21/open-cx-t3g1-coffeepaste-software/releases/tag/v3.0)
+  -[Iteration 4]()
 ---
 ## Test
 
 
 ---
 ## Configuration and change management
-Configuration and change management are key activities to control change to, and maintain the integrity of, a project’s artifacts (code, models, documents).
 
-For the purpose of ESOF, we will use a very simple approach, just to manage feature requests, bug fixes, and improvements, using GitHub issues and following the GitHub flow.
+To maintain a project code, documents and other elements clean is very important we take a look at configuration and change management.
+
+We tried to use GitHub pull requests and worked around our trello and private discord to maintain consistency and decrease the chance of bugs showing up on our project.
 
 ---
 
 ## Project management
-We decided to use *trello* as our principal task management tool, with all of the user stories. 
-Our boar can be accessed by the  succeeding link:
- https://trello.com/b/pBEOztO7/coffepaste-project
+
+For our project we use trello to estimate the workload of each feature we would like to add.
+This helped us keep track of everything we had been doing and what we are still missing, 
+aswell as properly deciding which features to implement and who would be assigned to it based on the feature workload.
+See our progress through our [trello](https://trello.com/b/pBEOztO7/coffepaste-project).
