@@ -118,7 +118,7 @@ This user can choose between the already created thematics and participate in it
 
 ### Domain model
 <p align="center"> <img src="/images/Domain model.png" alt="Domain Model"/> </p>
----
+
 
 ## Architecture and Design
 The architecture of a software system, along with others roles, is responsable to control the overall system complexity, to ensure system integrity and required quality attributes.
