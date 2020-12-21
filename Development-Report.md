@@ -117,7 +117,7 @@ This user can choose between the already created thematics and participate in it
 
 
 ### Domain model
-
+<p align="center"> <img src="/images/Domain model.png" alt="Domain Model"/> </p>
 ---
 
 ## Architecture and Design
@@ -133,11 +133,6 @@ The architectural pattern,MVC , embodies three parts. Or to be more exact it div
 
 ### Physical architecture
 <p align="center"> <img src="/images/DeploymentDiagram.png" alt="Deployment Diagram"/> </p>
-
-
-### Prototype
-
----
 
 ## Implementation
 
