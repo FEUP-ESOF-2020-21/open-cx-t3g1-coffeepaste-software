@@ -149,6 +149,31 @@ The implementation was divided in iterations, here are the releases for each of 
 ---
 ## Test
 
+In order to make sure that everything in our application works as expected, we have implemented a series of tests using flutter's testing framework.
+
+### Test Plan
+
+#### Flutter Widget Tests
+We have implemented some widget tests to ensure that the widgets are displayed and work correctly. However, we didn't test all widget because we had problem with the tests and we couldn't fix all of them in time for the report. The tests encompass:
+
+Trying to log in with empty email or password
+Tapping profile triggers edit profile nav bar to appear
+Logging in as a user
+Create Session page is correctly loaded.
+
+### Test Case Specifications
+
+#### Flutter Widget Tests
+
+Trying to log in with empty email or password
+These tests confirm that it isn't possible to log in if the email or password are empty.
+
+Tapping profile triggers edit profile nav bar to appear
+These tests confirm that the flow of the app is working as intended. They also confirm that the user will be able to access the edit profile functionality.
+
+Create Session page is correctly loaded
+These tests confirm that the Create Session page appears as it should in the screen. It also confirms that the user can see text field to change the Theme and Description of the session.
+
 
 ---
 ## Configuration and change management
