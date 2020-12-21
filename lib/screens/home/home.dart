@@ -75,7 +75,6 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
       position: _slideAnimatin,
       child: Container(
         color: Colors.green[400],
-
         child: Padding(
           padding: const EdgeInsets.only(right:16.0),
           child: Align(
@@ -235,4 +234,3 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
     );
   }
 }
-
