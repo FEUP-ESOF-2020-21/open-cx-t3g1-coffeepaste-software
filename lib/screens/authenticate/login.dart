@@ -123,6 +123,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                         SizedBox(height: 40.0),
                         Container(
+                          key: Key('signIn'),
                           height: 40.0,
                           child: Material(
                             borderRadius: BorderRadius.circular(20.0),

@@ -58,6 +58,8 @@ class _CreateSessionState extends State<CreateSession> {
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
               child: TextField(
+                key:Key('Theme'),
+                maxLength: 25,
                 onChanged: (String v){
                   session.setType(v);
                 } ,
@@ -68,6 +70,8 @@ class _CreateSessionState extends State<CreateSession> {
             Padding(
               padding: const EdgeInsets.only(bottom: 8.0),
               child: TextField(
+                key: Key('Description'),
+                maxLines: 5,
                 onChanged: (String v){
                   session.setDescription(v);
                 } ,

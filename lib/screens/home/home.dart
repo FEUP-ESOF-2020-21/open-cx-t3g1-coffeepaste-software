@@ -1,14 +1,39 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/jitsii/session.dart';
 import 'package:flutter_app/services/auth.dart';
+import 'package:flutter_app/screens/home/editProfile.dart';
+import 'package:provider/provider.dart';
+import 'package:flutter_app/models/user.dart';
 
 
 class Home extends StatefulWidget{
+  final User currentUser;
+
+  Home({this.currentUser});
+
+
   @override
   _HomeState createState() => _HomeState();
 }
 
+Route _goEditProfile(currentUser) {
+  return PageRouteBuilder(
+    pageBuilder: (context, animation, secondaryAnimation) => editProfile(user:currentUser),
+    transitionsBuilder: (context, animation, secondaryAnimation, child) {
+      var curve = Curves.ease;
+
+      var tween = Tween( begin :Offset(1,0), end: Offset(0,0)).chain(CurveTween(curve: curve));
+
+      return SlideTransition(
+        position: animation.drive(tween),
+        child: child,
+      );
+    },
+  );
+}
+
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
+
 
   final AuthService _auth = AuthService();
   bool isCollapsed=true;
@@ -59,6 +84,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               crossAxisAlignment: CrossAxisAlignment.start,
               children:<Widget> [
+                /*
                 FlatButton(
                   child: Text('Account settings \u{2795}',
                       style: TextStyle(
@@ -69,15 +95,18 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin{
                     await _auth.signOut();
                   },
                 ),
+                */
+
                 SizedBox(height:10),
                 FlatButton(
-                  child: Text('Edit Profile',
+                  key: Key('editProfile'),
+                  child: Text('Profile',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 20)
                   ),
                   onPressed: () async{
-                    await _auth.signOut();
+                    Navigator.of(context).push(_goEditProfile(widget.currentUser));
                   },
                 ),
                 SizedBox(height:10),
